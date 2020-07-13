@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tarea 07</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body>
+	<h1>Tarea 07 <a href="index.html"><img class="Icon" src="img/inicio.png" alt="texto" title="Inicio"></a></h1>
+	<h2>Su sueldo final</h2>
+	<p id="resultado"></p>
+
+	<script>
+	//Cree todas mis variables a usar pero primero pido al usuario ingresar su categoria y sueldo convirtiendo los valores en enteros
+		var categoria=parseInt(prompt("Introduzca su categoria 1, 2, 3 o 4"));
+		var sueldo=parseInt(prompt("Introduzca su sueldo"));
+		var total;
+		//Uso la condicion IF para evaluar la categoria y si se cumple entra un proceso de mulriplicar cuanto sera el aumento y sumarselo a su sueldo
+		if (categoria==1)
+			total=(sueldo*0.15)+sueldo;
+		else if(categoria==2)
+			total=(sueldo*0.10)+sueldo;
+		else if(categoria==3)
+			total=(sueldo*0.08)+sueldo;
+		else 
+			total=(sueldo*0.07)+sueldo;
+		//Solo imprimo el sueldo final de la operacion realizada
+		document.getElementById("resultado").innerHTML="Tu sueldo final es "+total;
+	</script>
+
+</body>
+</html>

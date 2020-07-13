@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tarea 08</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body>
+	<h1>Tarea 08 <a href="index.html"><img class="Icon" src="img/inicio.png" alt="texto" title="Inicio"></a></h1>
+	<h2>Precios Topping</h2>
+	<p id="precioF"></p>
+	<script>
+	//Crear mis variable y precio iniciarla en 20 ya que es el precio normal sin topping y preguntar escogiendo una opcion con numero
+		var precio=20;
+		var topp=prompt("Elije el numero de tu topping: 1.Sin topping, 2.Oreo, 3.Kikat, 4.Cajeta, 5.ChocoNuez");
+		//Evaluar la condicion que elija el usuario a travez de numeros depende del caso o numero que elija se ejecuta una operacion para dar el precio Final
+		switch(topp){
+			case '1':
+				precio;
+				break;
+			case '2':
+				precio=precio+10;
+				break;
+			case '3':
+				precio=precio+15;
+				break;
+			case '4':
+				precio=precio+10;
+				break;
+			case '5':
+				precio=precio+20;
+				break;
+		}
+		//Solo mando imprimir en una etiqueta <p> el costo final con un mensaje
+		document.getElementById("precioF").innerHTML="El precio del topping es: "+precio;
+	</script>
+
+</body>
+</html>

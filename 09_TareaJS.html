@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tarea 09</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body>
+	<h1>Tarea 09 <a href="index.html"><img class="Icon" src="img/inicio.png" alt="texto" title="Inicio"></a></h1>
+
+	<script>
+	//Usare un ciclo do while para evaluar el mientras y en este caso evaluar la respuesta del usuario hasat que diga no o cancelar
+		do{
+			//creo dos variables en una solo guardare el dato que ingrese el usuario y en la otra el valor de salida que tendra en este caso sera un mensaje
+			var generacion;
+			var nacimiento=prompt("Introduzca su año de nacimiento");
+			
+			//Usar el If else para poner los rangos de las fechas de nacimiento y mandar un mensaje deacuerdo al año que ingrese
+			if(nacimiento>=1994 & nacimiento<=2010)
+				generacion="Generazion Z";
+			else if(nacimiento>=1981)
+				generacion="Generazion Y";
+			else if(nacimiento>=1969)
+				generacion="Generazion X";
+			else generacion="Baby Boom";
+			//primero enviara su respuesta de la generacion
+			alert(generacion);
+			//Y ahora vuelve a preguntar su desea conocer más información de alguna otra fecha
+			var info=prompt("Desea conocer más informacion?");
+			//se sigue ejecutando siempre y cuando el usuario coloque el si como respuesta
+		}while(info=="si");
+
+	</script>
+
+</body>
+</html>

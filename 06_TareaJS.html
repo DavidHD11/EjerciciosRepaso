@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tarea 06</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body>
+	<h1>Tarea 06 <a href="index.html"><img class="Icon" src="img/inicio.png" alt="texto" title="Inicio"></a></h1>
+	<h3>La suma total de los numeros pares y Los numeros Pares</h3>
+	<p id="numPar"></p>
+
+	<script>
+	//Aqui creo una varible llamada suma y la inicializo en 0
+	var suma=0;
+	//En el ciclo for usare una variable iniciada en 2, donde terminara cuando la condicion sea menor o igual a 100 y su incremento sera de 2 en 2
+		for(var i=2; i<=100; i=i+2){
+			//Ahora la variable suma la usaremos para sumar con la varible i todos los numeros pares
+			suma=suma+i;
+			//imprimo la variable i para que muestre todos los numeros pares
+			document.write(" "+i);
+			//imprimo el valor total de la suma usando getElement
+      		document.getElementById("numPar").innerHTML=suma;     		
+		}		
+	</script>
+
+</body>
+</html>

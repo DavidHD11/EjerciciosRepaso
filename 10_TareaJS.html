@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tarea 10</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body>
+	<h1>Tarea 10 <a href="index.html"><img class="Icon" src="img/inicio.png" alt="texto" title="Inicio"></a></h1>
+	<h2>Costos</h2>
+	<p id="resultado"></p>
+	<script>
+		var destino;
+		var respuesta=prompt("¿Desea viajar?");
+			if(respuesta=="si"){
+				var mes=prompt("¿Que mes viajara? Julio/Diciembre o Enero/Agosto");
+			}
+			switch(mes){
+				case 'julio':
+					destino="Cancun: $7000 Disneyandia: $12000 Ixtapa: $5000 Las Vegas: $12000";
+					break;
+				case 'diciembre':
+					destino="Cancun: $7000 Disneyandia: $12000 Ixtapa: $5000 Las Vegas: $12000";
+					break;
+				case 'enero':
+					destino="Cancun: $10000 Disneyandia: $20000 Ixtapa: $8000 Las Vegas: $18000";
+					break;
+				case 'agosto':
+					destino="Cancun: $10000 Disneyandia: $20000 Ixtapa: $8000 Las Vegas: $18000";
+					break;
+			}
+			document.getElementById("resultado").innerHTML=destino;
+	</script>
+
+</body>
+</html>
